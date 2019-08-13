@@ -8,10 +8,10 @@
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.abiral.rai.list"
+      "PACKAGE_NAME": ""
     },
     "cordova-plugin-geolocation-ios-fixed": {
-      "PACKAGE_NAME": "com.abiral.rai.list"
+      "PACKAGE_NAME": ""
     }
   },
   "dependent_plugins": {}
