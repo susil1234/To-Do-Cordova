@@ -30,6 +30,7 @@ $(document).ready(function() {
                     app.createListElement(item);
             });
             app.currentTime();
+            app.getWeatherLocation();
 
 
         },
@@ -37,7 +38,6 @@ $(document).ready(function() {
             console.log("Device on pause");
         },
         onResume: function() {
-            // console.log("Device on resume");
             alert("Welcome back, Let's kill this task!");
         },
         // Update DOM on a Received Event
@@ -73,6 +73,42 @@ $(document).ready(function() {
             while (ul.firstChild) {
                 ul.removeChild(ul.firstChild)
             };
+        },
+        getWeatherLocation: function() {
+            navigator.geolocation.getCurrentPosition(app.onWeatherSuccess, app.onWeatherError, { enableHighAccuracy: true });
+        },
+        onWeatherSuccess: function(position) {
+            let Latitude = position.coords.latitude;
+            let Longitude = position.coords.longitude;
+            app.getWeather(Latitude, Longitude);
+        },
+        getWeather: function(latitude, longitude) {
+            var OpenWeatherAppKey = "279445cc97b3857f6ffc10ece820df05";
+            const getGeolocation = document.querySelector('.geolocation');
+
+            var queryString =
+                'http://api.openweathermap.org/data/2.5/weather?lat=' +
+                latitude + '&lon=' + longitude + '&appid=' + OpenWeatherAppKey + '&units=metric';
+
+            $.getJSON(queryString, function(results) {
+
+                if (results.weather.length) {
+
+                    $.getJSON(queryString, function(results) {
+
+                        if (results.weather.length) {
+                            getGeolocation.textContent = `${results.name} ${Math.round(results.main.temp)}C`;
+
+                        }
+
+                    });
+                }
+            }).fail(function() {
+                console.log("error getting location");
+            });
+        },
+        onWeatherError: function(error) {
+            console.log('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
         },
         currentTime: function() {
             app.getDay();

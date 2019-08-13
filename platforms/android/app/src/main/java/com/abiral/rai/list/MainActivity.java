@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.abiral.rai.list;
+package com.susil.toDoList;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

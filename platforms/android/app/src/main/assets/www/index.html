@@ -4,7 +4,7 @@
 
 <head>
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
@@ -20,21 +20,24 @@
 
 
     <div data-role="page" id="page">
-        <div data-role="header">
+        <div data-role="header" class="header">
             <div class="current-date ui-mini"></div>
+            <div class="geolocation ui-mini">
+                <!-- springvale 19C -->
+            </div>
         </div>
 
         <div data-role="content">
             <ul id="list" class="main__list--ul touch" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search list..." data-icon="false" data-split-icon="delete">
 
             </ul>
-            <button id="button"> Clear all</button>
+            <button id="button"> Delete all</button>
         </div>
         <!-- Content -->
 
         <div id="confirm" class="ui-content" data-role="popup" data-theme="a">
 
-            <p id="question">Are you sure you want to delete:</p>
+            <p id="question">Do you raelly want to delete:</p>
 
             <div class="ui-grid-a">
 
@@ -55,7 +58,7 @@
             </a>
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#page" data-icon="check">To Do List</a></li>
+                    <li><a href="#page" data-icon="check">Cordova To Do List</a></li>
                 </ul>
             </div>
             <!-- /navbar -->

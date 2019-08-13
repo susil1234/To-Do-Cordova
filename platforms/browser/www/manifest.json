@@ -3,7 +3,7 @@
   "display": "standalone",
   "name": "toDoList",
   "short_name": "toDoList",
-  "version": "com.abiral.rai.list",
+  "version": "com.susil.toDoList",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "author": "Apache Cordova Team",
   "icons": [],
