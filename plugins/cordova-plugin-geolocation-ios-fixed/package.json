@@ -1,0 +1,79 @@
+{
+  "_from": "cordova-plugin-geolocation-ios-fixed",
+  "_id": "cordova-plugin-geolocation-ios-fixed@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-LgldAJlB4W5CYNvVKjSp/kEKDOdJnR/Kj3oOVQcIvLfNfBGXARrNKg1rQp+5cYcSvamxwwrKWyORQTZfiiHOig==",
+  "_location": "/cordova-plugin-geolocation-ios-fixed",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-geolocation-ios-fixed",
+    "name": "cordova-plugin-geolocation-ios-fixed",
+    "escapedName": "cordova-plugin-geolocation-ios-fixed",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-geolocation-ios-fixed/-/cordova-plugin-geolocation-ios-fixed-1.0.0.tgz",
+  "_shasum": "51fd162d929f5d3b7cd8d50c3a070b1c3e24f1c8",
+  "_spec": "cordova-plugin-geolocation-ios-fixed",
+  "_where": "/Users/abiralrai/Desktop/Cordova/toDoList",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-geolocation-ios-fixed",
+    "platforms": [
+      "android",
+      "ios",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Geolocation Plugin iOS fixed",
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova-android": ">=6.3.0"
+      },
+      "5.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/slkerndnme/cordova-plugin-geolocation-ios-fixed#readme",
+  "keywords": [
+    "cordova",
+    "geolocation",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-geolocation-ios-fixed",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slkerndnme/cordova-plugin-geolocation-ios-fixed.git"
+  },
+  "scripts": {
+    "eslint": "node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint src && node node_modules/eslint/bin/eslint tests",
+    "test": "npm run eslint"
+  },
+  "version": "1.0.0"
+}
