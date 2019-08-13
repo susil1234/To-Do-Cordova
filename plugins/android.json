@@ -8,10 +8,10 @@
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": ""
+      "PACKAGE_NAME": "com.susil.toDoList"
     },
     "cordova-plugin-geolocation-ios-fixed": {
-      "PACKAGE_NAME": ""
+      "PACKAGE_NAME": "com.susil.toDoList"
     }
   },
   "dependent_plugins": {}

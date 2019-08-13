@@ -1,32 +1,35 @@
 {
-  "_from": "cordova-plugin-geolocation-ios-fixed",
+  "_args": [
+    [
+      "cordova-plugin-geolocation-ios-fixed@1.0.0",
+      "C:\\Users\\pokhr\\OneDrive\\Documents\\GitHub\\To-do-cordova"
+    ]
+  ],
+  "_from": "cordova-plugin-geolocation-ios-fixed@1.0.0",
   "_id": "cordova-plugin-geolocation-ios-fixed@1.0.0",
   "_inBundle": false,
   "_integrity": "sha512-LgldAJlB4W5CYNvVKjSp/kEKDOdJnR/Kj3oOVQcIvLfNfBGXARrNKg1rQp+5cYcSvamxwwrKWyORQTZfiiHOig==",
   "_location": "/cordova-plugin-geolocation-ios-fixed",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "cordova-plugin-geolocation-ios-fixed",
+    "raw": "cordova-plugin-geolocation-ios-fixed@1.0.0",
     "name": "cordova-plugin-geolocation-ios-fixed",
     "escapedName": "cordova-plugin-geolocation-ios-fixed",
-    "rawSpec": "",
+    "rawSpec": "1.0.0",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "1.0.0"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-geolocation-ios-fixed/-/cordova-plugin-geolocation-ios-fixed-1.0.0.tgz",
-  "_shasum": "51fd162d929f5d3b7cd8d50c3a070b1c3e24f1c8",
-  "_spec": "cordova-plugin-geolocation-ios-fixed",
-  "_where": "/Users/abiralrai/Desktop/Cordova/toDoList",
+  "_spec": "1.0.0",
+  "_where": "C:\\Users\\pokhr\\OneDrive\\Documents\\GitHub\\To-do-cordova",
   "author": {
     "name": "Apache Software Foundation"
   },
-  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-geolocation-ios-fixed",
     "platforms": [
@@ -35,7 +38,6 @@
       "windows"
     ]
   },
-  "deprecated": false,
   "description": "Cordova Geolocation Plugin iOS fixed",
   "devDependencies": {
     "eslint": "^4.0.0",

@@ -30,10 +30,7 @@ $(document).ready(function() {
                     app.createListElement(item);
             });
             app.currentTime();
-<<<<<<< HEAD
-=======
             app.getWeatherLocation();
->>>>>>> development
 
 
         },
@@ -41,7 +38,6 @@ $(document).ready(function() {
             console.log("Device on pause");
         },
         onResume: function() {
-            // console.log("Device on resume");
             alert("Welcome back, Let's kill this task!");
         },
         // Update DOM on a Received Event
@@ -101,20 +97,8 @@ $(document).ready(function() {
                     $.getJSON(queryString, function(results) {
 
                         if (results.weather.length) {
-                            // alert(Math.round(results.main.temp));
-                            getGeolocation.textContent = `${results.name} + ' ' + ${Math.round(results.main.temp)} + C`;
+                            getGeolocation.textContent = `${results.name} ${Math.round(results.main.temp)}C`;
 
-                            // $('#description').text(results.name);
-                            // $('#temp').text(results.main.temp);
-                            // $('#wind').text(results.wind.speed);
-                            // $('#humidity').text(results.main.humidity);
-                            // $('#visibility').text(results.weather[0].main);
-
-                            // var sunriseDate = new Date(results.sys.sunrise);
-                            // $('#sunrise').text(sunriseDate.toLocaleTimeString());
-
-                            // var sunsetDate = new Date(results.sys.sunrise);
-                            // $('#sunset').text(sunsetDate.toLocaleTimeString());
                         }
 
                     });
