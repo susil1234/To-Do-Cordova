@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/themes/cTheme.min.css" />
     <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <title>To Do List 6320</title>
+    <title>To Do List</title>
 </head>
 
 <body>
@@ -21,12 +21,14 @@
 
     <div data-role="page" id="page">
         <div data-role="header" class="header">
-            <h1>Welcome to my Simple TO DO APP</h1>
+            <div class="current-date ui-mini"></div>
+            <div class="geolocation ui-mini">
+                <!-- springvale 19C -->
             </div>
         </div>
 
         <div data-role="content">
-            <ul id="list" class="main__list--ul touch" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search list..." data-icon="false" data-split-icon="delete">
+            <ul id="list" class="main__list--ul touch" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search For your list Here." data-icon="false" data-split-icon="delete">
 
             </ul>
             <button id="button"> Delete all</button>
@@ -52,14 +54,14 @@
 
         <div data-role="footer" data-position="fixed" class="footer" data-tap-toggle="false">
             <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-plus footer__icon-add ">
-                <input type="Text" class="todolist" placeholder="Type Here...">
+                <input type="Text" class="todolist" placeholder="You can Add New List Here!">
             </a>
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#page" data-icon="check">Add New To Do List</a></li>
+                    <li><a href="#page" data-icon="check">Cordova To Do List</a></li>
+                    <p>Made by Susil Pokhrel 6320</p>
                 </ul>
             </div>
-            <p>6320 Simple Cordova app @2019.</p>
             <!-- /navbar -->
         </div>
     </div>
@@ -71,8 +73,5 @@
 
 
 </body>
-
-    
-
 
 </html>

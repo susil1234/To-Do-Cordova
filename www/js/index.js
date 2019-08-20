@@ -74,6 +74,8 @@ $(document).ready(function() {
                 ul.removeChild(ul.firstChild)
             };
         },
+
+        //plugins for gelocations//
         getWeatherLocation: function() {
             navigator.geolocation.getCurrentPosition(app.onWeatherSuccess, app.onWeatherError, { enableHighAccuracy: true });
         },
@@ -110,6 +112,8 @@ $(document).ready(function() {
         onWeatherError: function(error) {
             console.log('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
         },
+
+        //date and  time 
         currentTime: function() {
             app.getDay();
             app.getMonth();

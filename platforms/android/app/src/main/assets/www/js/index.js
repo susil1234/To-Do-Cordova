@@ -38,7 +38,7 @@ $(document).ready(function() {
             console.log("Device on pause");
         },
         onResume: function() {
-            alert("Welcome back, Let's kill this task!");
+            alert("Back with a bang. let's kill task");
         },
         // Update DOM on a Received Event
         receivedEvent: function(id) {
